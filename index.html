@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARGUS</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://github.com/Argusattendance/Demo-Argus/raw/main/WITHOUT%20BACKGROUND.png" type="image/png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="ARGUS">
+  <meta name="description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://argusattendance.github.io/Argusattendance/">
+  <meta property="og:title" content="ARGUS">
+  <meta property="og:description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
+  <meta property="og:image" content="https://github.com/Argusattendance/Demo-Argus/raw/main/WITHOUT%20BACKGROUND.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://argusattendance.github.io/Argusattendance/">
+  <meta name="twitter:title" content="ARGUS">
+  <meta name="twitter:description" content="Smart Attendance & Workflow Monitoring by Argus Softwares">
+  <meta name="twitter:image" content="https://github.com/Argusattendance/Demo-Argus/raw/main/WITHOUT%20BACKGROUND.png">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background: #fff;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+    }
+
+    .loader img {
+      max-width: 150px;
+      height: auto;
+      display: block;
+    }
+
+    /* iOS Safari height fix */
+    @supports (-webkit-touch-callout: none) {
+      html, body, .iframe-container {
+        height: -webkit-fill-available;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <div class="loader" id="loader">
+      <img src="https://github.com/Argusattendance/Demo-Argus/raw/main/WITHOUT%20BACKGROUND.png" alt="Loading..." />
+    </div>
+    <iframe  
+      src="https://script.google.com/macros/s/AKfycby_9w2TCB44Rc3gFbJ6rYgNiX_hFaWXFa8mVvqVT-3TKclnsXIJf7vMTDBNWIqLn8xA/exec?company=Z-Axe%20Engineering%20Company" 
+      title="Argus Web App"
+      allow="camera; microphone; geolocation; fullscreen; autoplay; clipboard-read; clipboard-write"
+      onload="document.getElementById('loader').style.display = 'none';"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
